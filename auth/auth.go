@@ -5,8 +5,8 @@ import (
 	"os"
 
 	"github.com/google/go-github/v43/github"
-	"github.com/gruntwork-io/git-xargs/types"
-	"github.com/gruntwork-io/go-commons/errors"
+	"github.com/tnn-gruntwork-io/git-xargs/types"
+	"github.com/tnn-gruntwork-io/go-commons/errors"
 
 	"golang.org/x/oauth2"
 )

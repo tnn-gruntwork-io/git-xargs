@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # We renamed a ton of our repos to the Terraform Registry naming format. This script uses grep and sed to search for
 # references to the old names and replace them with the new names. For more context on the rename, see
-# https://gruntwork-io.slack.com/archives/C0PJF332B/p1611068513028500.
+# https://tnn-gruntwork-io.slack.com/archives/C0PJF332B/p1611068513028500.
 
 # Bash doesn't have a good way to escape quotes in strings. The official solution is to list multiple strings next
 # to each other (https://stackoverflow.com/a/28786747/483528), but that becomes unreadable, especially with regex.

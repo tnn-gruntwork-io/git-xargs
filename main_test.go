@@ -5,7 +5,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/gruntwork-io/git-xargs/cmd"
+	"github.com/tnn-gruntwork-io/git-xargs/cmd"
 	"github.com/stretchr/testify/assert"
 	"github.com/urfave/cli"
 )

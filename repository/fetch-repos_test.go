@@ -3,9 +3,9 @@ package repository
 import (
 	"testing"
 
-	"github.com/gruntwork-io/git-xargs/config"
-	"github.com/gruntwork-io/git-xargs/mocks"
-	"github.com/gruntwork-io/git-xargs/types"
+	"github.com/tnn-gruntwork-io/git-xargs/config"
+	"github.com/tnn-gruntwork-io/git-xargs/mocks"
+	"github.com/tnn-gruntwork-io/git-xargs/types"
 	"github.com/stretchr/testify/assert"
 )
 
@@ -19,15 +19,15 @@ func TestGetFileDefinedRepos(t *testing.T) {
 
 	allowedRepos := []*types.AllowedRepo{
 		&types.AllowedRepo{
-			Organization: "gruntwork-io",
+			Organization: "tnn-gruntwork-io",
 			Name:         "cloud-nuke",
 		},
 		&types.AllowedRepo{
-			Organization: "gruntwork-io",
+			Organization: "tnn-gruntwork-io",
 			Name:         "fetch",
 		},
 		&types.AllowedRepo{
-			Organization: "gruntwork-io",
+			Organization: "tnn-gruntwork-io",
 			Name:         "terratest",
 		},
 	}
@@ -43,7 +43,7 @@ func TestGetReposByOrg(t *testing.T) {
 	t.Parallel()
 
 	config := config.NewGitXargsTestConfig()
-	config.GithubOrg = "gruntwork-io"
+	config.GithubOrg = "tnn-gruntwork-io"
 	config.GithubClient = mocks.ConfigureMockGithubClient()
 
 	githubRepos, reposByOrgLookupErr := getReposByOrg(config)
@@ -57,7 +57,7 @@ func TestSkipArchivedRepos(t *testing.T) {
 	t.Parallel()
 
 	config := config.NewGitXargsTestConfig()
-	config.GithubOrg = "gruntwork-io"
+	config.GithubOrg = "tnn-gruntwork-io"
 	config.SkipArchivedRepos = true
 	config.GithubClient = mocks.ConfigureMockGithubClient()
 

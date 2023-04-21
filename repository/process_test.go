@@ -4,14 +4,14 @@ import (
 	"os/exec"
 	"testing"
 
-	"github.com/gruntwork-io/git-xargs/config"
-	"github.com/gruntwork-io/git-xargs/mocks"
-	"github.com/gruntwork-io/git-xargs/util"
+	"github.com/tnn-gruntwork-io/git-xargs/config"
+	"github.com/tnn-gruntwork-io/git-xargs/mocks"
+	"github.com/tnn-gruntwork-io/git-xargs/util"
 	"github.com/stretchr/testify/assert"
 )
 
 // TestProcessRepo smoke tests the processRepo function with a basic test config - however, the MockGitProvider implemented
-// in git_test.go intercepts the call to git.PlainClone to modify the repo URL to the local checkout of gruntwork-io/fetch
+// in git_test.go intercepts the call to git.PlainClone to modify the repo URL to the local checkout of tnn-gruntwork-io/fetch
 // which is bundled in data/test to allow tests to run against an actual repository without making any network calls or pushes to actual remote repositories
 func TestProcessRepo(t *testing.T) {
 	t.Parallel()

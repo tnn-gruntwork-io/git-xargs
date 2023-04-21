@@ -1,9 +1,9 @@
 package io
 
 import (
-	"github.com/gruntwork-io/git-xargs/config"
-	"github.com/gruntwork-io/git-xargs/types"
-	"github.com/gruntwork-io/go-commons/errors"
+	"github.com/tnn-gruntwork-io/git-xargs/config"
+	"github.com/tnn-gruntwork-io/git-xargs/types"
+	"github.com/tnn-gruntwork-io/go-commons/errors"
 )
 
 // EnsureValidOptionsPassed checks that user has provided one valid method for selecting repos to operate on

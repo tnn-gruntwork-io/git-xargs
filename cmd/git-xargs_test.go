@@ -4,8 +4,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/gruntwork-io/git-xargs/config"
-	"github.com/gruntwork-io/git-xargs/mocks"
+	"github.com/tnn-gruntwork-io/git-xargs/config"
+	"github.com/tnn-gruntwork-io/git-xargs/mocks"
 	"github.com/stretchr/testify/require"
 
 	"github.com/stretchr/testify/assert"

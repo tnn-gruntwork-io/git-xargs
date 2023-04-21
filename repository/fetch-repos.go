@@ -4,14 +4,14 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/gruntwork-io/git-xargs/auth"
-	"github.com/gruntwork-io/git-xargs/config"
-	"github.com/gruntwork-io/git-xargs/stats"
-	"github.com/gruntwork-io/git-xargs/types"
-	"github.com/gruntwork-io/go-commons/errors"
+	"github.com/tnn-gruntwork-io/git-xargs/auth"
+	"github.com/tnn-gruntwork-io/git-xargs/config"
+	"github.com/tnn-gruntwork-io/git-xargs/stats"
+	"github.com/tnn-gruntwork-io/git-xargs/types"
+	"github.com/tnn-gruntwork-io/go-commons/errors"
 
 	"github.com/google/go-github/v43/github"
-	"github.com/gruntwork-io/go-commons/logging"
+	"github.com/tnn-gruntwork-io/go-commons/logging"
 	"github.com/sirupsen/logrus"
 )
 

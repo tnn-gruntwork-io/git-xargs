@@ -39,7 +39,7 @@ def update_terratest_in_go_mod root_folder
       puts "Updating Terratest's version at #{path}..."
 
       dir = File.dirname(path)
-      `cd #{dir} && go get -u github.com/gruntwork-io/terratest@v0.31.3`
+      `cd #{dir} && go get -u github.com/tnn-gruntwork-io/terratest@v0.31.3`
       `cd #{dir} && go mod tidy`
     else
       puts "Found #{path} but it does not include Terratest as a dependency. Skipping."

@@ -1,5 +1,5 @@
-gruntwork-io/package-lambda
-gruntwork-io/module-security
-gruntwork-io/module-load-balancer
-gruntwork-io/terragrunt-infrastructure-modules-example
-gruntwork-io/terragrunt-infrastructure-live-example
+tnn-gruntwork-io/package-lambda
+tnn-gruntwork-io/module-security
+tnn-gruntwork-io/module-load-balancer
+tnn-gruntwork-io/terragrunt-infrastructure-modules-example
+tnn-gruntwork-io/terragrunt-infrastructure-live-example

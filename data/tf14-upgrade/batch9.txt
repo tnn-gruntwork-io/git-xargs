@@ -1,3 +1,3 @@
-gruntwork-io/infrastructure-as-code-testing-talk
-gruntwork-io/infrastructure-as-code-training
-gruntwork-io/intro-to-terraform
+tnn-gruntwork-io/infrastructure-as-code-testing-talk
+tnn-gruntwork-io/infrastructure-as-code-training
+tnn-gruntwork-io/intro-to-terraform

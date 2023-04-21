@@ -2,14 +2,14 @@ package repository
 
 import (
 	"github.com/google/go-github/v43/github"
-	"github.com/gruntwork-io/git-xargs/auth"
-	"github.com/gruntwork-io/git-xargs/config"
-	"github.com/gruntwork-io/git-xargs/io"
-	"github.com/gruntwork-io/git-xargs/stats"
-	"github.com/gruntwork-io/git-xargs/types"
-	"github.com/gruntwork-io/git-xargs/util"
-	"github.com/gruntwork-io/go-commons/errors"
-	"github.com/gruntwork-io/go-commons/logging"
+	"github.com/tnn-gruntwork-io/git-xargs/auth"
+	"github.com/tnn-gruntwork-io/git-xargs/config"
+	"github.com/tnn-gruntwork-io/git-xargs/io"
+	"github.com/tnn-gruntwork-io/git-xargs/stats"
+	"github.com/tnn-gruntwork-io/git-xargs/types"
+	"github.com/tnn-gruntwork-io/git-xargs/util"
+	"github.com/tnn-gruntwork-io/go-commons/errors"
+	"github.com/tnn-gruntwork-io/go-commons/logging"
 
 	"github.com/sirupsen/logrus"
 )
@@ -176,8 +176,8 @@ func fetchUserProvidedReposViaGithubAPI(githubClient auth.GithubClient, rs RepoS
 // OperateOnRepos acts as a switch, depending upon whether the user provided an explicit list of repos to operate.
 //
 // There are three ways to select repos to operate on via this tool:
-// 1. the --repo flag, which specifies a single repo, and which can be passed multiple times, e.g., --repo gruntwork-io/fetch --repo gruntwork-io/cloud-nuke, etc.
-// 2. the --repos flag which specifies the path to the user-defined flat file of repos in the format of 'gruntwork-io/cloud-nuke', one repo per line.
+// 1. the --repo flag, which specifies a single repo, and which can be passed multiple times, e.g., --repo tnn-gruntwork-io/fetch --repo tnn-gruntwork-io/cloud-nuke, etc.
+// 2. the --repos flag which specifies the path to the user-defined flat file of repos in the format of 'tnn-gruntwork-io/cloud-nuke', one repo per line.
 // 3. the --github-org flag which specifies the GitHub organization that should have all its repos fetched via API.
 //
 // However, even though there are two methods for users to select repos, we still only want a single uniform interface
