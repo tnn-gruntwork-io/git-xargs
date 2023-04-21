@@ -17,12 +17,12 @@ import (
 
 	"github.com/google/go-github/v43/github"
 
-	"github.com/gruntwork-io/git-xargs/common"
-	"github.com/gruntwork-io/git-xargs/config"
-	"github.com/gruntwork-io/git-xargs/stats"
-	"github.com/gruntwork-io/git-xargs/types"
-	"github.com/gruntwork-io/go-commons/errors"
-	"github.com/gruntwork-io/go-commons/logging"
+	"github.com/tnn-gruntwork-io/git-xargs/common"
+	"github.com/tnn-gruntwork-io/git-xargs/config"
+	"github.com/tnn-gruntwork-io/git-xargs/stats"
+	"github.com/tnn-gruntwork-io/git-xargs/types"
+	"github.com/tnn-gruntwork-io/go-commons/errors"
+	"github.com/tnn-gruntwork-io/go-commons/logging"
 )
 
 // cloneLocalRepository clones a remote GitHub repo via SSH to a local temporary directory so that the supplied command

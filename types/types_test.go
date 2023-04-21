@@ -19,8 +19,8 @@ func TestCustomErrorStatements(t *testing.T) {
 	errNoRepoSelected := &NoRepoSelectionsMadeErr{}
 	assert.Equal(t, "You must target some repos for processing either via stdin or by providing one of the --github-org, --repos, or --repo flags", errNoRepoSelected.Error())
 
-	errNoReposFound := &NoReposFoundErr{GithubOrg: "gruntwork-io"}
-	assert.Equal(t, "No repos found for the organization supplied via --github-org: gruntwork-io", errNoReposFound.Error())
+	errNoReposFound := &NoReposFoundErr{GithubOrg: "tnn-gruntwork-io"}
+	assert.Equal(t, "No repos found for the organization supplied via --github-org: tnn-gruntwork-io", errNoReposFound.Error())
 
 	errNoValidReposFoundAfterFiltering := NoValidReposFoundAfterFilteringErr{}
 	assert.Equal(t, "No valid repos were found after filtering out malformed input", errNoValidReposFoundAfterFiltering.Error())

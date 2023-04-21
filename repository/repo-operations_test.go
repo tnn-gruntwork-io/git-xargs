@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/gruntwork-io/git-xargs/config"
+	"github.com/tnn-gruntwork-io/git-xargs/config"
 	"github.com/sirupsen/logrus"
 	"github.com/stretchr/testify/assert"
 
@@ -12,13 +12,13 @@ import (
 )
 
 func getMockGithubRepo() *github.Repository {
-	userLogin := "gruntwork-io"
+	userLogin := "tnn-gruntwork-io"
 	user := &github.User{
 		Login: &userLogin,
 	}
 
 	repoName := "terragrunt"
-	cloneURL := "https://github.com/gruntwork-io/terragrunt"
+	cloneURL := "https://github.com/tnn-gruntwork-io/terragrunt"
 
 	repo := &github.Repository{
 		Owner:    user,

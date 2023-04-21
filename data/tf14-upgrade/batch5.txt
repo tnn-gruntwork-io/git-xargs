@@ -1,4 +1,4 @@
-gruntwork-io/package-openvpn
-gruntwork-io/module-ecs
-gruntwork-io/module-ci
-gruntwork-io/terraform-aws-eks
+tnn-gruntwork-io/package-openvpn
+tnn-gruntwork-io/module-ecs
+tnn-gruntwork-io/module-ci
+tnn-gruntwork-io/terraform-aws-eks

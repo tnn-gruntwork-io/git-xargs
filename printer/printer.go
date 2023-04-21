@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/gruntwork-io/git-xargs/types"
+	"github.com/tnn-gruntwork-io/git-xargs/types"
 	"github.com/pterm/pterm"
 )
 

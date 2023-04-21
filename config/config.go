@@ -4,12 +4,12 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/gruntwork-io/git-xargs/auth"
-	"github.com/gruntwork-io/git-xargs/common"
-	"github.com/gruntwork-io/git-xargs/local"
-	"github.com/gruntwork-io/git-xargs/stats"
-	"github.com/gruntwork-io/git-xargs/types"
-	"github.com/gruntwork-io/git-xargs/util"
+	"github.com/tnn-gruntwork-io/git-xargs/auth"
+	"github.com/tnn-gruntwork-io/git-xargs/common"
+	"github.com/tnn-gruntwork-io/git-xargs/local"
+	"github.com/tnn-gruntwork-io/git-xargs/stats"
+	"github.com/tnn-gruntwork-io/git-xargs/types"
+	"github.com/tnn-gruntwork-io/git-xargs/util"
 )
 
 // GitXargsConfig is the internal representation of a given git-xargs run as specified by the user

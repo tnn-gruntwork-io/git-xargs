@@ -1,5 +1,5 @@
-gruntwork-io/module-data-storage
-gruntwork-io/module-cache
-gruntwork-io/package-messaging
-gruntwork-io/package-static-assets
-gruntwork-io/terraform-aws-monitoring
+tnn-gruntwork-io/module-data-storage
+tnn-gruntwork-io/module-cache
+tnn-gruntwork-io/package-messaging
+tnn-gruntwork-io/package-static-assets
+tnn-gruntwork-io/terraform-aws-monitoring

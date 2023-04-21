@@ -1,6 +1,6 @@
 i don't feel so good
-gruntwork-io/cloud-nuke
-gruntwork-io/fetch
+tnn-gruntwork-io/cloud-nuke
+tnn-gruntwork-io/fetch
 imposter
-gruntwork-io/bash-commons
+tnn-gruntwork-io/bash-commons
 heynowbrowncow/

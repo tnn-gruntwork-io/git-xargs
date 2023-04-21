@@ -32,9 +32,9 @@ func TestProcessAllowedReposCorrectlyParsesValidReposFile(t *testing.T) {
 	mapOfExpectedRepoNames["cloud-nuke"] = false
 	mapOfExpectedRepoNames["bash-commons"] = false
 
-	// ensure all test repos have the correct gruntwork-io org
+	// ensure all test repos have the correct tnn-gruntwork-io org
 	for _, repo := range allowedRepos {
-		assert.Equal(t, repo.Organization, "gruntwork-io")
+		assert.Equal(t, repo.Organization, "tnn-gruntwork-io")
 		// Update the map as having "seen" the repo
 		mapOfExpectedRepoNames[repo.Name] = true
 	}
@@ -63,9 +63,9 @@ func TestProcessAllowedReposCorrectlyFiltersMalformedInput(t *testing.T) {
 	mapOfExpectedRepoNames["cloud-nuke"] = false
 	mapOfExpectedRepoNames["bash-commons"] = false
 
-	// ensure all test repos have the correct gruntwork-io org
+	// ensure all test repos have the correct tnn-gruntwork-io org
 	for _, repo := range allowedRepos {
-		assert.Equal(t, repo.Organization, "gruntwork-io")
+		assert.Equal(t, repo.Organization, "tnn-gruntwork-io")
 		// Update the map as having "seen" the repo
 		mapOfExpectedRepoNames[repo.Name] = true
 	}

@@ -1,4 +1,4 @@
-module github.com/gruntwork-io/git-xargs
+module github.com/tnn-gruntwork-io/git-xargs
 
 go 1.14
 
@@ -8,7 +8,7 @@ require (
 	github.com/google/go-github v17.0.0+incompatible // indirect
 	github.com/google/go-github/v43 v43.0.0
 	github.com/google/go-github/v48 v48.0.0 // indirect
-	github.com/gruntwork-io/go-commons v0.8.2
+	github.com/tnn-gruntwork-io/go-commons v0.8.2
 	github.com/pterm/pterm v0.12.42
 	github.com/sirupsen/logrus v1.7.0
 	github.com/stretchr/testify v1.7.0

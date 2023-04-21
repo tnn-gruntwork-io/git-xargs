@@ -1,1 +1,1 @@
-gruntwork-io/terragrunt
+tnn-gruntwork-io/terragrunt

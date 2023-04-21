@@ -5,14 +5,14 @@ import (
 	"os"
 	"strings"
 
-	"github.com/gruntwork-io/git-xargs/types"
-	"github.com/gruntwork-io/git-xargs/util"
-	"github.com/gruntwork-io/go-commons/logging"
+	"github.com/tnn-gruntwork-io/git-xargs/types"
+	"github.com/tnn-gruntwork-io/git-xargs/util"
+	"github.com/tnn-gruntwork-io/go-commons/logging"
 	"github.com/sirupsen/logrus"
 )
 
 // ProcessAllowedRepos accepts a path to the flat file in which the user has defined their explicitly allowed repos.
-// It expects repos to be defined one per line in the following format: `gruntwork-io/cloud-nuke` with optional commas.
+// It expects repos to be defined one per line in the following format: `tnn-gruntwork-io/cloud-nuke` with optional commas.
 // Stray single and double quotes are also handled and stripped out if they are encountered, and spacing is irrelevant.
 func ProcessAllowedRepos(filepath string) ([]*types.AllowedRepo, error) {
 	logger := logging.GetLogger("git-xargs")

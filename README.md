@@ -1,5 +1,5 @@
-[![Go Report Card](https://goreportcard.com/badge/github.com/gruntwork-io/git-xargs)](https://goreportcard.com/report/github.com/gruntwork-io/git-xargs)
-[![gruntwork-io](https://circleci.com/gh/gruntwork-io/git-xargs.svg?style=svg)](https://circleci.com/gh/gruntwork-io/git-xargs)
+[![Go Report Card](https://goreportcard.com/badge/github.com/tnn-gruntwork-io/git-xargs)](https://goreportcard.com/report/github.com/tnn-gruntwork-io/git-xargs)
+[![tnn-gruntwork-io](https://circleci.com/gh/tnn-gruntwork-io/git-xargs.svg?style=svg)](https://circleci.com/gh/tnn-gruntwork-io/git-xargs)
 [![Homebrew](https://img.shields.io/badge/dynamic/json.svg?url=https://formulae.brew.sh/api/formula/git-xargs.json&query=$.versions.stable&label=homebrew)](https://formulae.brew.sh/formula/git-xargs)
 
 # Table of contents
@@ -147,7 +147,7 @@ $ brew install git-xargs
 ### Installation option 2: Installing published binaries
 
 1. **Download the correct binary for your platform**. Visit [the releases
-   page](https://github.com/gruntwork-io/git-xargs/releases) and download the correct binary depending on your system.
+   page](https://github.com/tnn-gruntwork-io/git-xargs/releases) and download the correct binary depending on your system.
    Save it to somewhere on your `PATH`, such as `/usr/local/bin/git-xargs`.
 
 1. **Set execute permissions**. For example, on Linux or Mac, you'd run:
@@ -168,18 +168,18 @@ $ brew install git-xargs
 
 1. **Run go install to install the latest release of git-xargs**:
      ```bash
-     go install github.com/gruntwork-io/git-xargs@latest
+     go install github.com/tnn-gruntwork-io/git-xargs@latest
      ```
 
 1. **Alternatively, use go install to select a specific release of git-xargs**:
      ```bash
-     go install github.com/gruntwork-io/git-xargs@v0.0.5
+     go install github.com/tnn-gruntwork-io/git-xargs@v0.0.5
      ```
 
 1. **If you have Go 1.16 or earlier, you can use get**
      ```bash
-     go get github.com/gruntwork-io/git-xargs
-     go get github.com/gruntwork-io/git-xargs@v0.0.5
+     go get github.com/tnn-gruntwork-io/git-xargs
+     go get github.com/tnn-gruntwork-io/git-xargs@v0.0.5
      ```
 
 ### Try it out!
@@ -219,8 +219,8 @@ Where `CMD` is either the full path to a (Bash, Python, Ruby, etc) script on you
 In other words, all the following usages are valid:
 
 ```
-git-xargs --repo gruntwork-io/cloud-nuke \
-   --repo gruntwork-io/terraform-aws-eks \
+git-xargs --repo tnn-gruntwork-io/cloud-nuke \
+   --repo tnn-gruntwork-io/terraform-aws-eks \
    --branch-name my-branch \
    /usr/local/bin/my-bash-script.sh
 ```
@@ -370,11 +370,11 @@ git-xargs \
 In this example, batch2.txt looks like this:
 
 ```
-gruntwork-io/infrastructure-as-code-training
-gruntwork-io/infrastructure-live-acme
-gruntwork-io/infrastructure-live-multi-account-acme
-gruntwork-io/infrastructure-modules-acme
-gruntwork-io/infrastructure-modules-multi-account-acme
+tnn-gruntwork-io/infrastructure-as-code-training
+tnn-gruntwork-io/infrastructure-live-acme
+tnn-gruntwork-io/infrastructure-live-multi-account-acme
+tnn-gruntwork-io/infrastructure-modules-acme
+tnn-gruntwork-io/infrastructure-modules-multi-account-acme
 ```
 
 Flat files contain one repo per line, each repository in the format of `<github-organization>/<repo-name>`. Commas, trailing or preceding spaces, and quotes are all filtered out at runtime. This is done in case you end up copying your repo list from a JSON list or CSV file.
@@ -387,9 +387,9 @@ arguments:
 ```
 git-xargs \
   --commit-message "Update copyright year" \
-  --repo gruntwork-io/terragrunt \
-  --repo gruntwork-io/terratest \
-  --repo gruntwork-io/cloud-nuke \
+  --repo tnn-gruntwork-io/terragrunt \
+  --repo tnn-gruntwork-io/terratest \
+  --repo tnn-gruntwork-io/cloud-nuke \
   "$(pwd)/scripts/update-copyright-year.sh"
 ```
 
@@ -399,7 +399,7 @@ And one more (Unix-philosophy friendly) way to get fine-grained control is to pa
 use by piping them in via `stdin`, separating repo names with whitespace or newlines:
 
 ```
-echo "gruntwork-io/terragrunt gruntwork-io/terratest" | git-xargs \
+echo "tnn-gruntwork-io/terragrunt tnn-gruntwork-io/terratest" | git-xargs \
   --commit-message "Update copyright year" \
   "$(pwd)/scripts/update-copyright-year.sh"
 ```
@@ -413,7 +413,7 @@ echo "gruntwork-io/terragrunt gruntwork-io/terratest" | git-xargs \
 | `--branch-name`                       | You must specify the name of the branch to make your local and remote changes on. You can further control branching behavior via `--skip-pull-requests` as explained below.                                                                                                                                                                                                                                                                     | String  | Yes      |
 | `--loglevel`                          | Specify the log level of messages git-xargs should print to STDOUT at runtime. By default, this is INFO - so only INFO level messages will be visible. Pass DEBUG to see runtime errors encountered by your scripts or commands. Accepted levels are TRACE, DEBUG, INFO, WARNING, ERROR, FATAL and PANIC. Default: `INFO`.                                                                                                                      | String  | No       |
 | `--repos`                             | If you want to specify many repos and manage them in files (which makes batching and testing easier) then use this flag to pass the filepath to a repos file. See [the repos file format](#option-2-flat-file-of-repository-names) for more information.                                                                                                                                                                                        | String  | No       |
-| `--repo`                              | Use this flag to specify a single repo, e.g., `--repo gruntwork-io/cloud-nuke`. Can be passed multiple times to target several repos.                                                                                                                                                                                                                                                                                                           | String  | No       |
+| `--repo`                              | Use this flag to specify a single repo, e.g., `--repo tnn-gruntwork-io/cloud-nuke`. Can be passed multiple times to target several repos.                                                                                                                                                                                                                                                                                                           | String  | No       |
 | `--github-org`                        | If you want to target every repo in a Github org that your GITHUB_OAUTH_TOKEN has access to, pass the name of the Organization with this flag, to page through every repo via the Github API and target it.                                                                                                                                                                                                                                     | String  | No       |
 | `--commit-message`                    | The commit message to use when creating commits. If you supply this flag, but neither the optional `--pull-request-title` or `--pull-request-description` flags, then the commit message value will be used for all three. Default: `[skip ci] git-xargs programmatic commit`. Note that, by default, git-xargs will prepend \"[skip ci]\" to commit messages unless you pass the `--no-skip-ci` flag. If you wish to use an alternative prefix other than [skip ci], you can add the literal string to your --commit-message value.                                                                                                                                                                            | String  | No       |
 | `--skip-pull-requests`                | If you don't want any pull requests opened, but would rather have your changes committed directly to your specified branch, pass this flag. Note that it won't work if your Github repo is configured with branch protections on the branch you're trying to commit directly to! Default: `false`.                                                                                                                                              | Boolean | No       |
@@ -435,7 +435,7 @@ Write your script as if it's operating on a single repo, then target many repos 
 
 ### Handling prerequisites and third party binaries
 
-It is currently assumed that bash script authors will be responsible for checking for prerequisites within their own scripts. If you are adding a new bash script to accomplish some new task across repos, consider using the [Gruntwork bash-commons assert_is_installed pattern](https://github.com/gruntwork-io/bash-commons/blob/3cb3c7160fb72b7411af184300bf077caede37e4/modules/bash-commons/src/assert.sh#L15) to ensure the operator has any required binaries installed.
+It is currently assumed that bash script authors will be responsible for checking for prerequisites within their own scripts. If you are adding a new bash script to accomplish some new task across repos, consider using the [Gruntwork bash-commons assert_is_installed pattern](https://github.com/tnn-gruntwork-io/bash-commons/blob/3cb3c7160fb72b7411af184300bf077caede37e4/modules/bash-commons/src/assert.sh#L15) to ensure the operator has any required binaries installed.
 
 ### Grouping your repos into separate batches
 

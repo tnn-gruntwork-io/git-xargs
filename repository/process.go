@@ -6,9 +6,9 @@ import (
 	"time"
 
 	"github.com/google/go-github/v43/github"
-	"github.com/gruntwork-io/git-xargs/config"
-	"github.com/gruntwork-io/git-xargs/types"
-	"github.com/gruntwork-io/go-commons/logging"
+	"github.com/tnn-gruntwork-io/git-xargs/config"
+	"github.com/tnn-gruntwork-io/git-xargs/types"
+	"github.com/tnn-gruntwork-io/go-commons/logging"
 	"github.com/pterm/pterm"
 	"github.com/sirupsen/logrus"
 )
@@ -37,7 +37,7 @@ func openPullRequestsWithThrottling(gitxargsConfig *config.GitXargsConfig, pr ty
 // However, we then separately process all open pull request jobs, through the PRChan. We do this so that
 // we can insert a configurable buffer of time between open pull request API calls, which must be staggered to avoid tripping
 // the GitHub API's rate limiting mechanisms
-// See https://github.com/gruntwork-io/git-xargs/issues/53 for more information
+// See https://github.com/tnn-gruntwork-io/git-xargs/issues/53 for more information
 func ProcessRepos(gitxargsConfig *config.GitXargsConfig, repos []*github.Repository) error {
 	logger := logging.GetLogger("git-xargs")
 

@@ -6,8 +6,8 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/gruntwork-io/git-xargs/types"
-	"github.com/gruntwork-io/go-commons/logging"
+	"github.com/tnn-gruntwork-io/git-xargs/types"
+	"github.com/tnn-gruntwork-io/go-commons/logging"
 	"github.com/sirupsen/logrus"
 )
 
@@ -52,7 +52,7 @@ func ConvertStringToAllowedRepo(repoInput string) *types.AllowedRepo {
 
 	logger.WithFields(logrus.Fields{
 		"Repo input": repoInput,
-	}).Debug("Could not parse a valid repo from input. Repo must be specified in format <github-org>/<repo-name>, e.g., gruntwork-io/cloud-nuke")
+	}).Debug("Could not parse a valid repo from input. Repo must be specified in format <github-org>/<repo-name>, e.g., tnn-gruntwork-io/cloud-nuke")
 
 	return nil
 }

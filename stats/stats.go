@@ -5,8 +5,8 @@ import (
 	"time"
 
 	"github.com/google/go-github/v43/github"
-	"github.com/gruntwork-io/git-xargs/printer"
-	"github.com/gruntwork-io/git-xargs/types"
+	"github.com/tnn-gruntwork-io/git-xargs/printer"
+	"github.com/tnn-gruntwork-io/git-xargs/types"
 )
 
 const (

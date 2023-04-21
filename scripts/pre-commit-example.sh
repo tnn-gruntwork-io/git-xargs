@@ -3,8 +3,8 @@
 function add_precommit {
 cat << EOF > .pre-commit-config.yaml
 repos:
-  - repo: https://github.com/gruntwork-io/pre-commit
-    rev: <VERSION> # Get the latest from: https://github.com/gruntwork-io/pre-commit/releases
+  - repo: https://github.com/tnn-gruntwork-io/pre-commit
+    rev: <VERSION> # Get the latest from: https://github.com/tnn-gruntwork-io/pre-commit/releases
     hooks:
       - id: terraform-fmt
       - id: terraform-validate

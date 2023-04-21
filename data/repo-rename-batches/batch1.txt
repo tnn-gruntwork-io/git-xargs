@@ -1,1 +1,1 @@
-gruntwork-io/aws-service-catalog
+tnn-gruntwork-io/aws-service-catalog

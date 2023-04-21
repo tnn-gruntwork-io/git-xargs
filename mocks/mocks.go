@@ -5,11 +5,11 @@ import (
 	"net/http"
 
 	"github.com/google/go-github/v43/github"
-	"github.com/gruntwork-io/git-xargs/auth"
+	"github.com/tnn-gruntwork-io/git-xargs/auth"
 )
 
 // Mock *github.Repository slice that is returned from the mock Repositories service in test
-var ownerName = "gruntwork-io"
+var ownerName = "tnn-gruntwork-io"
 
 var (
 	repoName1 = "terragrunt"
@@ -19,10 +19,10 @@ var (
 )
 
 var (
-	repoURL1 = "https://github.com/gruntwork-io/terragrunt"
-	repoURL2 = "https://github.com/gruntwork-io/terratest"
-	repoURL3 = "https://github.com/gruntwork-io/fetch"
-	repoURL4 = "https://github.com/gruntwork-io/terraform-kubernetes-helm"
+	repoURL1 = "https://github.com/tnn-gruntwork-io/terragrunt"
+	repoURL2 = "https://github.com/tnn-gruntwork-io/terratest"
+	repoURL3 = "https://github.com/tnn-gruntwork-io/fetch"
+	repoURL4 = "https://github.com/tnn-gruntwork-io/terraform-kubernetes-helm"
 )
 
 var archivedFlag = true
@@ -100,7 +100,7 @@ func ConfigureMockGithubClient() auth.GithubClient {
 	// being that in test we do not actually execute API calls to GitHub
 	client := auth.NewClient(github.NewClient(nil))
 
-	testHTMLUrl := "https://github.com/gruntwork-io/test/pull/1"
+	testHTMLUrl := "https://github.com/tnn-gruntwork-io/test/pull/1"
 
 	client.Repositories = mockGithubRepositoriesService{
 		Repository:   MockGithubRepositories[0],
@@ -131,13 +131,13 @@ func ConfigureMockGithubClient() auth.GithubClient {
 }
 
 func GetMockGithubRepo() *github.Repository {
-	userLogin := "gruntwork-io"
+	userLogin := "tnn-gruntwork-io"
 	user := &github.User{
 		Login: &userLogin,
 	}
 
 	repoName := "terragrunt"
-	cloneURL := "https://github.com/gruntwork-io/terragrunt"
+	cloneURL := "https://github.com/tnn-gruntwork-io/terragrunt"
 
 	repo := &github.Repository{
 		Owner:    user,

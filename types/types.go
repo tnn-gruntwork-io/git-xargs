@@ -73,7 +73,7 @@ func (NoRepoSelectionsMadeErr) Error() string {
 type NoRepoFlagTargetsValid struct{}
 
 func (NoRepoFlagTargetsValid) Error() string {
-	return fmt.Sprint("None of the repos specified via the --repo flag are valid. Please double-check you have included the Github org prefix for each - e.g. --repo gruntwork-io/git-xargs")
+	return fmt.Sprint("None of the repos specified via the --repo flag are valid. Please double-check you have included the Github org prefix for each - e.g. --repo tnn-gruntwork-io/git-xargs")
 }
 
 type NoBranchNameErr struct{}

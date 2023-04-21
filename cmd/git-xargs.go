@@ -8,14 +8,14 @@ import (
 	"strings"
 	"time"
 
-	"github.com/gruntwork-io/git-xargs/auth"
-	"github.com/gruntwork-io/git-xargs/common"
-	"github.com/gruntwork-io/git-xargs/config"
-	gitxargs_io "github.com/gruntwork-io/git-xargs/io"
-	"github.com/gruntwork-io/git-xargs/repository"
-	"github.com/gruntwork-io/git-xargs/types"
-	"github.com/gruntwork-io/go-commons/errors"
-	"github.com/gruntwork-io/go-commons/logging"
+	"github.com/tnn-gruntwork-io/git-xargs/auth"
+	"github.com/tnn-gruntwork-io/git-xargs/common"
+	"github.com/tnn-gruntwork-io/git-xargs/config"
+	gitxargs_io "github.com/tnn-gruntwork-io/git-xargs/io"
+	"github.com/tnn-gruntwork-io/git-xargs/repository"
+	"github.com/tnn-gruntwork-io/git-xargs/types"
+	"github.com/tnn-gruntwork-io/go-commons/errors"
+	"github.com/tnn-gruntwork-io/go-commons/logging"
 	"github.com/urfave/cli"
 )
 

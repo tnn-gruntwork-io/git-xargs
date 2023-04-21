@@ -1,1 +1,1 @@
-gruntwork-io/terraform-aws-openvpn
+tnn-gruntwork-io/terraform-aws-openvpn

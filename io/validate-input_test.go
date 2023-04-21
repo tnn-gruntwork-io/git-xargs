@@ -3,7 +3,7 @@ package io
 import (
 	"testing"
 
-	"github.com/gruntwork-io/git-xargs/config"
+	"github.com/tnn-gruntwork-io/git-xargs/config"
 	"github.com/stretchr/testify/assert"
 )
 
@@ -19,7 +19,7 @@ func TestEnsureValidOptionsPassedAcceptsValidGithubOrg(t *testing.T) {
 	t.Parallel()
 	testConfigWithGithubOrg := &config.GitXargsConfig{
 		BranchName: "test-branch",
-		GithubOrg:  "gruntwork-io",
+		GithubOrg:  "tnn-gruntwork-io",
 	}
 
 	err := EnsureValidOptionsPassed(testConfigWithGithubOrg)
@@ -41,7 +41,7 @@ func TestEnsureValidOptionsPassedAcceptedValidSingleRepo(t *testing.T) {
 	t.Parallel()
 	testConfigWithExplicitRepos := &config.GitXargsConfig{
 		BranchName: "test-branch",
-		RepoSlice:  []string{"gruntwork-io/cloud-nuke"},
+		RepoSlice:  []string{"tnn-gruntwork-io/cloud-nuke"},
 	}
 
 	err := EnsureValidOptionsPassed(testConfigWithExplicitRepos)
@@ -53,9 +53,9 @@ func TestEnsureValidOptionsPassedAcceptsAllFlagsSimultaneously(t *testing.T) {
 	testConfigWithAllSelectionCriteria := &config.GitXargsConfig{
 		BranchName:    "test-branch",
 		ReposFile:     "./my-repos.txt",
-		RepoSlice:     []string{"gruntwork-io/cloud-nuke", "gruntwork-io/fetch"},
+		RepoSlice:     []string{"tnn-gruntwork-io/cloud-nuke", "tnn-gruntwork-io/fetch"},
 		GithubOrg:     "github-org",
-		RepoFromStdIn: []string{"gruntwork-io/terragrunt"},
+		RepoFromStdIn: []string{"tnn-gruntwork-io/terragrunt"},
 	}
 
 	err := EnsureValidOptionsPassed(testConfigWithAllSelectionCriteria)
